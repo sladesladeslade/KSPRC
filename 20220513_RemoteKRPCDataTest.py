@@ -1,11 +1,13 @@
 import krpc
 
-# fxn to connect to krpc server
-conn = krpc.connect(
-    name = "Test",
-    address = "192.168.56.1",
-    rpc_port = 5000,
-    stream_port = 5001)
+#krpc.connect(name = "Test")
+#conn = krpc.connect(
+ #   name = "Test")
+    #address = "192.168.1.1",
+    #rpc_port = 1000,
+    #stream_port = 1001)
+
+conn = krpc.connect(name="Test")
 
 # print status of connection
 print(conn.krpc.get_status().version)
